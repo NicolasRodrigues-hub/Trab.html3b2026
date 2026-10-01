@@ -1,0 +1,151 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    background-image: url('../img/fundo.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    margin: 0;
+    padding: 0;
+}
+
+/* Controla a altura/grossura da imagem da logo */
+header h1 img {
+    max-width: 100%;
+    height: 80px;
+    object-fit: contain;
+    /* Não deixa a logo distorcer */
+    border-radius: 0 0 8px 8px;
+}
+
+.links,
+.links a,
+.links a:visited {
+    color: #fff;
+}
+
+.img-ferramentas {
+    width: 20px;
+    height: auto;
+    vertical-align: middle;
+    /* Alinha o ícone com a altura do texto */
+}
+
+/* Centraliza os elementos no meio da tela */
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.minha-foto {
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+    border-radius: 12px;
+    margin: 15px 0;
+}
+
+.minha-foto2 {
+    max-width: 400px;
+    width: 300px;
+    height: 250px;
+    display: block;
+    border-radius: 15px;
+}
+
+/* Limita a largura do texto para não espalhar muito em telas grandes */
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* Organiza os botões em linha */
+nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    /* Quebra linha no celular se não couber */
+    gap: 12px;
+    margin: 20px 0;
+    padding: 0;
+    list-style: none;
+    /* Tira as bolinhas pretas da lista */
+}
+
+/* Estilo visual dos botões */
+nav a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #0A2540;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 6px;
+    box-sizing: border-box;
+}
+
+/* Efeito ao passar o mouse no botão */
+nav a:hover {
+    background-color: #0A2540;
+    color: #fff;
+    transform: translateY(-5px);
+    /* Faz o botão subir um pouco */
+}
+
+h1,
+h2 {
+    color: #fff;
+    background-color: #0A2540;
+    text-align: center;
+}
+
+footer {
+    color: #fff;
+    margin-top: 50px;
+    padding-top: 15px;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    text-align: center;
+    font-size: 0.9rem;
+    opacity: 0.8;
+}
+
+ol,
+ul {
+    text-align: left;
+    padding-left: 20px;
+}
+
+/* Caixa com a frase do Einstein */
+.prg-agr {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 40px;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Fundo escuro transparente */
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.agradeço {
+    height: 230px;
+    width: 300px;
+    border-radius: 15px;
+}
