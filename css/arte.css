@@ -1,7 +1,7 @@
 body {
     font-family: 'Poppins', sans-serif;
     color: #fff;
-    background-image: url('../img/fundo.jpg');
+    background-image: url('fundo.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -21,23 +21,56 @@ header h1 {
 /* Controla a altura/grossura da imagem da logo */
 header h1 img {
     max-width: 100%;
-    height: 80px;
-    object-fit: contain;
-    /* Não deixa a logo distorcer */
+    height: 80px; 
+    object-fit: contain; /* Não deixa a logo distorcer */
     border-radius: 0 0 8px 8px;
 }
 
-.links,
-.links a,
-.links a:visited {
-    color: #fff;
+.links ul {
+    list-style: none; /* sem-pontos */
+    padding: 0; /* sem-recuo */
+    margin: 0; /* sem-margem */
+    display: flex; /* em-linha */
+    justify-content: center; /* centraliza-caixas */
+    align-items: center; /* alinha-vertical */
+    flex-wrap: wrap; /* quebra-linha-celular */
+    gap: 20px; /* espaco-entre-caixas */
+}
+
+.links li {
+    display: flex; /* em-bloco */
+}
+
+.card-link {
+    display: flex; /* centraliza-imagem */
+    justify-content: center; /* centraliza-horizontal */
+    align-items: center; /* centraliza-vertical */
+    width: 140px; /* largura-da-caixa */
+    height: 70px; /* altura-fina-comprida */
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* sombra-leve */
+    transition: all 0.3s ease; /* animacao-suave */
+}
+
+/* Tamanho da imagem dentro da caixa */
+.card-link img {
+    width: 45px; /* largura-imagem */
+    height: 45px; /* altura-imagem */
+    object-fit: contain; /* sem-distorcer */
+}
+
+/* Animação ao passar o mouse */
+.card-link:hover {
+    background-color: #0A2540;
+    transform: translateY(-4px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* aumenta-sombra */
 }
 
 .img-ferramentas {
     width: 20px;
-    height: auto;
-    vertical-align: middle;
-    /* Alinha o ícone com a altura do texto */
+    height: auto;         
+    vertical-align: middle; /* Alinha o ícone com a altura do texto */
 }
 
 /* Centraliza os elementos no meio da tela */
@@ -46,7 +79,7 @@ header h1 img {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 0 20px;
+    padding: 0 20px;   
     box-sizing: border-box;
 }
 
@@ -60,8 +93,8 @@ header h1 img {
 
 .minha-foto2 {
     max-width: 400px;
-    width: 300px;
-    height: 250px;
+    width: 300px;       
+    height: 250px;      
     display: block;
     border-radius: 15px;
 }
@@ -78,13 +111,11 @@ nav ul {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
-    /* Quebra linha no celular se não couber */
+    flex-wrap: wrap; /* Quebra linha no celular se não couber */
     gap: 12px;
     margin: 20px 0;
     padding: 0;
-    list-style: none;
-    /* Tira as bolinhas pretas da lista */
+    list-style: none; /* Tira as bolinhas pretas da lista */
 }
 
 /* Estilo visual dos botões */
@@ -105,12 +136,10 @@ nav a {
 nav a:hover {
     background-color: #0A2540;
     color: #fff;
-    transform: translateY(-5px);
-    /* Faz o botão subir um pouco */
+    transform: translateY(-5px); /* Faz o botão subir um pouco */
 }
 
-h1,
-h2 {
+h1, h2 {
     color: #fff;
     background-color: #0A2540;
     text-align: center;
@@ -126,8 +155,7 @@ footer {
     opacity: 0.8;
 }
 
-ol,
-ul {
+ol, ul {
     text-align: left;
     padding-left: 20px;
 }
@@ -138,8 +166,7 @@ ul {
     margin-top: 50px;
     margin-bottom: 40px;
     padding: 20px;
-    background-color: rgba(0, 0, 0, 0.5);
-    /* Fundo escuro transparente */
+    background-color: rgba(0, 0, 0, 0.5); /* Fundo escuro transparente */
     border-radius: 12px;
     border: 1px solid rgba(255, 255, 255, 0.2);
 }
@@ -148,4 +175,52 @@ ul {
     height: 230px;
     width: 300px;
     border-radius: 15px;
+}
+
+.tecnologia ol {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;      /* Permite quebrar linha no celular se não couber tudo */
+    gap: 20px;            /* Define o espaço uniforme entre cada caixa */
+}
+
+.tecnologia ol {
+    list-style: none; /* sem-números */
+    padding: 0; /* sem-recuo */
+    margin: 0; /* sem-margem */
+    display: flex; /* em-linha */
+    justify-content: center; /* centraliza-grupo */
+    align-items: center; /* alinha-vertical */
+    flex-wrap: wrap; /* quebra-linha */
+    gap: 20px; /* espaço-caixas */
+}
+
+.tecnologia li {
+    background-color: #ffffff;
+    width: 100px; /* largura-fixa */
+    padding: 15px 10px; /* espaço-interno */
+    border-radius: 8px; /* cantos-arredondados */
+    display: flex; /* em-bloco */
+    flex-direction: column; /* imagem-sobre-texto */
+    align-items: center; /* centraliza-horizontal */
+    justify-content: center; /* centraliza-vertical */
+}
+
+.tecnologia img {
+    width: 60px; /* largura-imagem */
+    height: 60px; /* altura-imagem */
+    object-fit: contain; /* sem-distorcer */
+    margin-bottom: 8px; /* espaço-abaixo */
+}
+
+.tecnologia p {
+    margin: 0; /* sem-margem */
+    font-weight: bold; /* negrito */
+    text-transform: uppercase; /* maiúsculas */
+    color: #333333; /* cor-texto */
+    font-size: 0.85rem; /* tamanho-fonte */
 }
